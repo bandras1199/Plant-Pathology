@@ -28,7 +28,7 @@ Initial approach: <br />
   <img src="/demo/4cont.png" alt="description" height="175" width="300" /> <img src="/demo/5fitellipse4.png" alt="description" height="175" width="300" /> <img src="/demo/6compr.png" alt="description" height="175" width="300" />
   
 4, Augmentation: 
-- Applying random distortion and rotation on the image, automatically crop the black sides. [3][4] <br />
+- Applying random distortion and rotation on the image, automatically crop the black sides. [3] [4] <br />
 - Image: Previous image after augmentation. <br />
  <img src="/demo/7augmentation.png" alt="description" height="175" width="300" />
  
@@ -43,7 +43,7 @@ Mistakes:
  
  
  
- 
+ <strong> References: </strong> 
  
  [1] OpenCV Documentation, https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_transforms/py_fourier_transform/py_fourier_transform.html
  [2] Calculus Optimization #9, https://www.youtube.com/watch?v=r0wdreyN4QE
