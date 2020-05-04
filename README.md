@@ -10,5 +10,10 @@ Initial approach:
 Image processing steps:
 
   1, Initial image: 
-  
+ ![alt text](https://drive.google.com/open?id=1p8Q-km0e6NX9i8qVH3hs6IsjrJEr_gZQ)
+ 
+ <p align="center">
+  <img src="https://drive.google.com/open?id=1p8Q-km0e6NX9i8qVH3hs6IsjrJEr_gZQ" width="350" title="hover text">
+  <img src="https://drive.google.com/open?id=1p8Q-km0e6NX9i8qVH3hs6IsjrJEr_gZQ" width="350" alt="accessibility text">
+</p>
     
