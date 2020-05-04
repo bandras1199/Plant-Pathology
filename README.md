@@ -20,6 +20,10 @@ Image processing steps:
  
  <img src="/demo/1mag_orig.png" alt="description" height="175" width="300" /> <img src="/demo/2mag_cube.png" alt="description" height="175" width="300" /> <img src="/demo/3rem.png" alt="description" height="175" width="300" />
  
+ 3, Object detection:
+ - Left image: Sharping the edges then detecting the outlier contours <br />
+ - Middle image: First fit an ellipse on the contours of the leaf, then fit the biggest possible rectangle inside this ellipse < br/>
+ 
  
  
  
