@@ -10,4 +10,4 @@ Initial approach:
 Image processing steps:
 
   1, Initial image: 
- <img src="/demo/1mag_orig.png" alt="description" height="300" width="175" />   <img src="/demo/1mag_orig.png" alt="description" height="300" width="175" />
+ <img src="/demo/1mag_orig.png" alt="description" height="175" width="300" />   <img src="/demo/1mag_orig.png" alt="description" height="175" width="300" />
