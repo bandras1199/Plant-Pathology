@@ -34,12 +34,13 @@ Initial approach: <br />
  
 Mistakes: 
 - Some images have their infected part close to their edge, which has to be considered during object detection. Currently, these faulty images are excluded from the experiment.
- - Left image: Original image <br />
- - Right image: Processed Image <br />
-  <img src="/demo/8mistake2.png" alt="description" height="175" width="300" /> <img src="/demo/8mistake.png" alt="description" height="175" width="300" /> 
+ - Left image: Original image. <br />
+ - Right image: Processed Image. <br />
+<img src="/demo/8mistake2.png" alt="description" height="175" width="300" /> <img src="/demo/8mistake.png" alt="description" height="175" width="300" /> 
 
 <strong> Deep Learning: </strong> 
 
+I was constantly facing with GPU memory allocation problem in case of larger mini batch sizes and bigger networks (ResNet50)
  
  
  
