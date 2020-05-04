@@ -13,9 +13,10 @@ Image processing steps:
   
  <img src="/demo/0orig.png" alt="description" height="175" width="300" />   
  
-  2, Left image: Applying Fourier transormation on the image and plotting the magnitude spectrum <br />
-    Middle image: Covering the middle (low frequencies) of the magnitude spectrum, resulting a high pass filter <br />
-    Right image: Removing low frequency parts (blurry background), plotted in JET [1] <br />
+  2, Removing blurry background noise:
+  - Left image: Applying Fourier transormation on the image and plotting the magnitude spectrum <br />
+  - Middle image: Covering the middle (low frequencies) of the magnitude spectrum, resulting a high pass filter <br />
+  - Right image: Removing low frequency parts (blurry background), plotted in JET [1] <br />
  
  <img src="/demo/1mag_orig.png" alt="description" height="175" width="300" /> <img src="/demo/2mag_cube.png" alt="description" height="175" width="300" /> <img src="/demo/3rem.png" alt="description" height="175" width="300" />
  
