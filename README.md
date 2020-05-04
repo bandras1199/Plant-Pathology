@@ -9,11 +9,10 @@ Initial approach:
   
 Image processing steps:
 
-  1, Initial image: 
+  1, Initial image:
+  
  <img src="/demo/0orig.png" alt="description" height="175" width="300" />   
  
   2, Removing the blurry background by covering the middle (low frequencies) of the magnitude spectrum 
  
- <img src="/demo/1mag_orig.png" alt="description" height="175" width="300" />  
- <img src="/demo/2mag_cube.png" alt="description" height="175" width="300" /  
- <img src="/demo/3rem.png" alt="description" height="175" width="300" /
+ <img src="/demo/1mag_orig.png" alt="description" height="175" width="300" /> <img src="/demo/2mag_cube.png" alt="description" height="175" width="300" /> <img src="/demo/3rem.png" alt="description" height="175" width="300" />
