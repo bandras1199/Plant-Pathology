@@ -10,4 +10,4 @@ Initial approach:
 Image processing steps:
 
   1, Initial image: 
- ![alt text]
+ ![alt text](demo/1mag_orig.png)
