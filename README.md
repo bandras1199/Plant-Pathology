@@ -3,8 +3,8 @@ Experimenting with the Kaggle Plant Pathology Dataset [1]
 
 Initial approach: <br />
 
-  I wanted to reduce the computational needs as much as possible, using image processing and trying to 
-  find a good performing but still sustainable network architecture.
+  I wanted to reduce the computational needs as much as possible, using image processing and to 
+  find a good performing but still manageable sized network architecture.
   
 <strong> Introduction to the dataset: </strong> <br />
 1820 training images with different disease categories: <br />  <br />
