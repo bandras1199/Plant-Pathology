@@ -34,14 +34,14 @@ Initial approach: <br />
   <img src="/demo/4cont.png" alt="description" height="175" width="300" /> <img src="/demo/5fitellipse4.png" alt="description" height="175" width="300" /> <img src="/demo/6compr.png" alt="description" height="175" width="300" />
   
 4, Augmentation: 
-- Applying random distortion and rotation on the image, automatically crop the black sides. [4] [5] <br />
-- Image: Previous image after augmentation. <br />
+- Applying random distortion and rotation on the image, automatically crop the black sides [4][5] <br />
+- Image: Previous image after augmentation <br />
  <img src="/demo/7augmentation.png" alt="description" height="175" width="300" />
  
 Mistakes: 
 - Some images have their infected part close to their edge, which has to be considered during object detection. Currently, these faulty images are excluded from the experiment.
- - Left image: Original image. <br />
- - Right image: Processed Image. <br />
+ - Left image: Original image <br />
+ - Right image: Processed Image <br />
 <img src="/demo/8mistake2.png" alt="description" height="175" width="300" /> <img src="/demo/8mistake.png" alt="description" height="175" width="300" /> 
 
 <strong> Deep Learning: </strong> <br />
