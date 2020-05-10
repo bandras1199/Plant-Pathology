@@ -58,6 +58,7 @@ I made a custom modul ResNet18 to reduce training time although the it ended wit
   - fix image processing method for leaf injuries placed close to the side
   - focus on the detection of multiple diseases
   - apply histogram based features and spectral filtering
+  - select best model during training (not the last) - requires saving which takes extra time
   - add randomized repetation and 10-by-10 CV for more accurate evaluation
  
  <strong> References: </strong> 
