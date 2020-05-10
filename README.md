@@ -33,7 +33,7 @@ Initial approach: <br />
   <img src="/demo/4cont.png" alt="description" height="175" width="300" /> <img src="/demo/5fitellipse4.png" alt="description" height="175" width="300" /> <img src="/demo/6compr.png" alt="description" height="175" width="300" />
   
 4, Augmentation: 
-- Applying random distortion and rotation on the image, automatically crop the black sides [4] [5] <br />
+- Applying random distortion and rotation on the image, automatically crop the remained black sides after rotation [4] [5] <br />
 - Image: Previous image after augmentation <br />
  <img src="/demo/7augmentation.png" alt="description" height="175" width="300" />
  
