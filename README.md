@@ -3,9 +3,15 @@ Experimenting with the Kaggle Plant Pathology Dataset: https://www.kaggle.com/c/
 
 Initial approach: <br />
 
-  I had very limited resources for this project (google colab + my old laptop) therefore I wanted 
-  to reduce the computational needs as much as possible, using lots of image processing and trying to 
+  I wanted to reduce the computational needs as much as possible, using image processing and trying to 
   find a good performing but still sustainable network architecture.
+  
+<strong> Introduction to the dataset: </strong>
+1820 training images with different disease categories:
+          Healthy:                    Scab:
+ <img src="/demo/Train_2.png" alt="description" height="175" width="300" /> <img src="/demo/Train_0.png" alt="description" height="175" width="300" />   
+
+
   
 <strong> Image processing steps: </strong> 
 
