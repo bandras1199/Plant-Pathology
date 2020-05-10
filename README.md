@@ -34,7 +34,7 @@ Initial approach: <br />
   <img src="/demo/4cont.png" alt="description" height="175" width="300" /> <img src="/demo/5fitellipse4.png" alt="description" height="175" width="300" /> <img src="/demo/6compr.png" alt="description" height="175" width="300" />
   
 4, Augmentation: 
-- Applying random distortion and rotation on the image, automatically crop the black sides [4][5] <br />
+- Applying random distortion and rotation on the image, automatically crop the black sides [4] [5] <br />
 - Image: Previous image after augmentation <br />
  <img src="/demo/7augmentation.png" alt="description" height="175" width="300" />
  
@@ -45,10 +45,10 @@ Mistakes:
 <img src="/demo/8mistake2.png" alt="description" height="175" width="300" /> <img src="/demo/8mistake.png" alt="description" height="175" width="300" /> 
 
 <strong> Deep Learning: </strong> <br />
-I have tried two popular convolutional neural network architecture, ResNet and DenseNet because of their advantages and simple implementation [6][7].
+I have tried two popular convolutional neural network architecture, ResNet and DenseNet because of their advantages and simple implementation [6] [7].
 
 ResNet50 had so far the best results in a 4-by-4 cross validation split. It had similiar training graphs over each CV cycle best performance on the most difficult class (multiple dieseases). <br />
-I made a custom modul ResNet18 to reduce training time although the it ended with worse results, therefore the complexity of the more layers is necessary to solve this problem. <br />
+I made a custom modul ResNet18 to reduce training time although the it ended with worse results, therefore the complexity of the more layers is necessary to solve this problem [8]. <br />
 
  <img src="/demo/Resnet50.png" alt="description" height="231" width="300" /> <img src="/demo/Dense121.png" alt="description" height="231" width="300" /> <img src="/demo/Res18.png" alt="description" height="231" width="300" />  <br />
  <img src="/demo/plot.png" alt="description" height="420" width="800" /> 
@@ -68,5 +68,6 @@ I made a custom modul ResNet18 to reduce training time although the it ended wit
  <br /> [5] Automatic crop after rotation, https://github.com/mdbloice/Augmentor/blob/master/Augmentor/Operations.py 
  <br /> [6] ResNet, https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035
  <br /> [7] DenseNet, https://medium.com/the-advantages-of-densenet/the-advantages-of-densenet-98de3019cdac
+ <br /> [8] ResNet code, https://github.com/calmisential/TensorFlow2.0_ResNet/blob/master/models/resnet.py
  
  
