@@ -46,8 +46,9 @@ Fix:
 <strong> Deep Learning: </strong> <br />
 I have tried two popular convolutional neural network architectures, ResNet and DenseNet because of their advantages and simple implementation [6] [7].
 
-ResNet50 had so far the best results in a 4-by-4 cross validation split. It had similar training graphs over each CV cycle best performance on the most difficult class (multiple disease). <br />
-I made a custom modul ResNet18 to reduce training time although the it ended with worse results, therefore the complexity of the more layers is necessary to solve this problem [8]. <br />
+ResNet50 had so far the best results in a 4-by-4 cross validation split. 
+<br />It had similar training graphs over each CV cycle and also the best performance on the most difficult class (multiple disease).
+<br />I made a custom modul ResNet18 to reduce training time although at the end it had significantly worse results, therefore I kept the larger network because the complexity of the more layers is necessary to solve this problem [8]. <br />
 
  <img src="/demo/Resnet50.png" alt="description" height="231" width="300" /> <img src="/demo/Dense121.png" alt="description" height="231" width="300" /> <img src="/demo/Res18.png" alt="description" height="231" width="300" />  <br />
  <img src="/demo/plot.png" alt="description" height="420" width="800" /> 
