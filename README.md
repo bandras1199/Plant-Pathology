@@ -1,5 +1,5 @@
 # Plant-Pathology
-Experimenting with the Kaggle Plant Pathology Dataset: https://www.kaggle.com/c/plant-pathology-2020-fgvc7
+Experimenting with the Kaggle Plant Pathology Dataset [1]
 
 Initial approach: <br />
 
@@ -22,19 +22,19 @@ Initial approach: <br />
   2, Removing blurry background noise:
   - Left image: Applying Fourier transormation on the image and plotting the magnitude spectrum <br />
   - Middle image: Covering the middle (low frequencies) of the magnitude spectrum, resulting a high pass filter <br />
-  - Right image: Removing low frequency parts (blurry background), plotted in JET [1] <br />
+  - Right image: Removing low frequency parts (blurry background), plotted in JET [2] <br />
  
  <img src="/demo/1mag_orig.png" alt="description" height="175" width="300" /> <img src="/demo/2mag_cube.png" alt="description" height="175" width="300" /> <img src="/demo/3rem.png" alt="description" height="175" width="300" />
  
  3, Object detection:
  - Left image: Sharping the edges then detecting the outlier contours <br />
- - Middle image: First fit an ellipse on the contours of the leaf, make it parallel to X axis and then fit the biggest possible rectangle inside this ellipse by solving the optimization problem [2] <br />
+ - Middle image: First fit an ellipse on the contours of the leaf, make it parallel to X axis and then fit the biggest possible rectangle inside this ellipse by solving the optimization problem [3] <br />
  - Right image: Final image, cropped to standard size <br />
  
   <img src="/demo/4cont.png" alt="description" height="175" width="300" /> <img src="/demo/5fitellipse4.png" alt="description" height="175" width="300" /> <img src="/demo/6compr.png" alt="description" height="175" width="300" />
   
 4, Augmentation: 
-- Applying random distortion and rotation on the image, automatically crop the black sides. [3] [4] <br />
+- Applying random distortion and rotation on the image, automatically crop the black sides. [4] [5] <br />
 - Image: Previous image after augmentation. <br />
  <img src="/demo/7augmentation.png" alt="description" height="175" width="300" />
  
@@ -44,18 +44,21 @@ Mistakes:
  - Right image: Processed Image. <br />
 <img src="/demo/8mistake2.png" alt="description" height="175" width="300" /> <img src="/demo/8mistake.png" alt="description" height="175" width="300" /> 
 
-<strong> Deep Learning: </strong> 
+<strong> Deep Learning: </strong> <br />
+I have tried two popular convolutional neural network architecture, ResNet and DenseNet because of their advantages and simple implementation [6][7].
 
-I was constantly facing with GPU memory allocation problem in case of larger mini batch sizes and bigger networks (ResNet50)
- 
- 
+ResNet50 had so far the best results in a 4-by-4 cross validation split. It had similiar training graphs over each CV cycle best performance on the most difficult class (multiple dieseases).
+I made a custom modul ResNet18 to reduce training time although the it ended with worse results, therefore the complexity of the bigger network is necessary to solve this problem.
+
+
  
  <strong> References: </strong> 
- 
- [1] OpenCV Documentation, https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_transforms/py_fourier_transform/py_fourier_transform.html
- [2] Calculus Optimization #9, https://www.youtube.com/watch?v=r0wdreyN4QE
- [3] Image Augmentation in Numpy, https://medium.com/@schatty/image-augmentation-in-numpy-the-spell-is-simple-but-quite-unbreakable-e1af57bb50fd
- [4] Automatic crop after rotation, https://github.com/mdbloice/Augmentor/blob/master/Augmentor/Operations.py 
- 
+ [1] Kaggle Plant Pathology Challange, https://www.kaggle.com/c/plant-pathology-2020-fgvc7
+ [2] OpenCV Documentation, https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_transforms/py_fourier_transform/py_fourier_transform.html
+ [3] Calculus Optimization #9, https://www.youtube.com/watch?v=r0wdreyN4QE
+ [4] Image Augmentation in Numpy, https://medium.com/@schatty/image-augmentation-in-numpy-the-spell-is-simple-but-quite-unbreakable-e1af57bb50fd
+ [5] Automatic crop after rotation, https://github.com/mdbloice/Augmentor/blob/master/Augmentor/Operations.py 
+ [6] ResNet, https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035
+ [7] DenseNet, https://medium.com/the-advantages-of-densenet/the-advantages-of-densenet-98de3019cdac
  
  
