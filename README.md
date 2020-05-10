@@ -6,13 +6,13 @@ Initial approach: <br />
   I wanted to reduce the computational needs as much as possible, using image processing and trying to 
   find a good performing but still sustainable network architecture.
   
-<strong> Introduction to the dataset: </strong>
-1820 training images with different disease categories:
-          Healthy:                    Scab:
- <img src="/demo/Train_2.png" alt="description" height="175" width="300" /> <img src="/demo/Train_0.png" alt="description" height="175" width="300" />   
+<strong> Introduction to the dataset: </strong> <br />
+1820 training images with different disease categories: <br />
+          Healthy label and Scab label: <br />
+ <img src="/demo/healthy.png" alt="description" height="175" width="300" /> <img src="/demo/scab.png" alt="description" height="175" width="300" />   <br />
+           Rust label and Multiple label: <br />
+ <img src="/demo/rust.png" alt="description" height="175" width="300" /> <img src="/demo/multiple.png" alt="description" height="175" width="300" />   <br />
 
-
-  
 <strong> Image processing steps: </strong> 
 
   1, Initial image:
