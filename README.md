@@ -20,7 +20,7 @@ Initial approach: <br />
  <img src="/demo/0orig.png" alt="description" height="175" width="300" />   
  
   2, Removing blurry background noise:
-  - Left image: Applying Fourier transormation on the image and plotting the magnitude spectrum <br />
+  - Left image: Applying Fourier transformation on the image and plotting the magnitude spectrum <br />
   - Middle image: Covering the middle (low frequencies) of the magnitude spectrum, resulting a high pass filter <br />
   - Right image: Removing low frequency parts (blurry background), plotted in JET [2] <br />
  
@@ -47,7 +47,7 @@ Mistakes:
 <strong> Deep Learning: </strong> <br />
 I have tried two popular convolutional neural network architecture, ResNet and DenseNet because of their advantages and simple implementation [6] [7].
 
-ResNet50 had so far the best results in a 4-by-4 cross validation split. It had similiar training graphs over each CV cycle best performance on the most difficult class (multiple dieseases). <br />
+ResNet50 had so far the best results in a 4-by-4 cross validation split. It had similar training graphs over each CV cycle best performance on the most difficult class (multiple disease). <br />
 I made a custom modul ResNet18 to reduce training time although the it ended with worse results, therefore the complexity of the more layers is necessary to solve this problem [8]. <br />
 
  <img src="/demo/Resnet50.png" alt="description" height="231" width="300" /> <img src="/demo/Dense121.png" alt="description" height="231" width="300" /> <img src="/demo/Res18.png" alt="description" height="231" width="300" />  <br />
@@ -59,7 +59,7 @@ I made a custom modul ResNet18 to reduce training time although the it ended wit
   - focus on the detection of multiple diseases
   - apply histogram based features and spectral filtering
   - select best model during training (not the last) - requires saving which takes extra time
-  - add randomized repetation and 10-by-10 CV for more accurate evaluation
+  - add randomized repetition and 10-by-10 CV for more accurate evaluation
  
  <strong> References: </strong> 
  <br /> [1] Kaggle Plant Pathology Challange, https://www.kaggle.com/c/plant-pathology-2020-fgvc7
