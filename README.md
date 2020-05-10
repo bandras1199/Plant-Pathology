@@ -7,7 +7,7 @@ Initial approach: <br />
   find a good performing but still sustainable network architecture.
   
 <strong> Introduction to the dataset: </strong> <br />
-1820 training images with different disease categories: <br />
+1820 training images with different disease categories: <br />  <br />
           Healthy label and Scab label: <br />
  <img src="/demo/healthy.png" alt="description" height="175" width="300" /> <img src="/demo/scab.png" alt="description" height="175" width="300" />   <br />
            Rust label and Multiple label: <br />
@@ -50,7 +50,9 @@ I have tried two popular convolutional neural network architecture, ResNet and D
 ResNet50 had so far the best results in a 4-by-4 cross validation split. It had similiar training graphs over each CV cycle best performance on the most difficult class (multiple dieseases). <br />
 I made a custom modul ResNet18 to reduce training time although the it ended with worse results, therefore the complexity of the more layers is necessary to solve this problem. <br />
 
- <img src="/demo/Resnet50.png" alt="description" height="175" width="300" /> <img src="/demo/Dense121.png" alt="description" height="175" width="300" /> <img src="/demo/Res18.png" alt="description" height="175" width="300" />
+ <img src="/demo/Resnet50.png" alt="description" height="231" width="300" /> <img src="/demo/Dense121.png" alt="description" height="231" width="300" /> <img src="/demo/Res18.png" alt="description" height="231" width="300" />  <br />
+ <img src="/demo/plot.png" alt="description" height="420" width="800" /> 
+ 
  
 <strong> Conclusion, future plans: </strong> <br />
   - fix image processing method for leaf injuries placed close to the side
