@@ -7,9 +7,9 @@ Initial approach: <br />
   
 <strong> Introduction to the dataset: </strong> <br />
 1820 training images with different disease categories: <br />  <br />
-          Healthy label and Scab label: <br />
+          Healthy class (left) and Scab disease class (right): <br />
  <img src="/demo/healthy.png" alt="description" height="175" width="300" /> <img src="/demo/scab.png" alt="description" height="175" width="300" />   <br />
-           Rust label and Multiple label: <br />
+           Rust disease class (left) and Multiple disease class (right): <br />
  <img src="/demo/rust.png" alt="description" height="175" width="300" /> <img src="/demo/multiple.png" alt="description" height="175" width="300" />   <br />
 
 <strong> Image processing steps: </strong> 
