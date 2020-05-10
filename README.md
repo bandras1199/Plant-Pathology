@@ -61,12 +61,12 @@ I made a custom modul ResNet18 to reduce training time although the it ended wit
   - add randomized repetation and 10-by-10 CV for more accurate evaluation
  
  <strong> References: </strong> 
- [1] Kaggle Plant Pathology Challange, https://www.kaggle.com/c/plant-pathology-2020-fgvc7
- [2] OpenCV Documentation, https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_transforms/py_fourier_transform/py_fourier_transform.html
- [3] Calculus Optimization #9, https://www.youtube.com/watch?v=r0wdreyN4QE
- [4] Image Augmentation in Numpy, https://medium.com/@schatty/image-augmentation-in-numpy-the-spell-is-simple-but-quite-unbreakable-e1af57bb50fd
- [5] Automatic crop after rotation, https://github.com/mdbloice/Augmentor/blob/master/Augmentor/Operations.py 
- [6] ResNet, https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035
- [7] DenseNet, https://medium.com/the-advantages-of-densenet/the-advantages-of-densenet-98de3019cdac
+ <br /> [1] Kaggle Plant Pathology Challange, https://www.kaggle.com/c/plant-pathology-2020-fgvc7
+ <br /> [2] OpenCV Documentation, https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_transforms/py_fourier_transform/py_fourier_transform.html
+ <br /> [3] Calculus Optimization #9, https://www.youtube.com/watch?v=r0wdreyN4QE
+ <br /> [4] Image Augmentation in Numpy, https://medium.com/@schatty/image-augmentation-in-numpy-the-spell-is-simple-but-quite-unbreakable-e1af57bb50fd
+ <br /> [5] Automatic crop after rotation, https://github.com/mdbloice/Augmentor/blob/master/Augmentor/Operations.py 
+ <br /> [6] ResNet, https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035
+ <br /> [7] DenseNet, https://medium.com/the-advantages-of-densenet/the-advantages-of-densenet-98de3019cdac
  
  
