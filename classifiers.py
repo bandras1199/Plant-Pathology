@@ -22,7 +22,7 @@ def var_init():
   strides = (1, 1)
   kernel_initializer = "he_normal"
   padding = "same"
-  kernel_regularizer = l2(1.e-2)
+  kernel_regularizer = l2(1.e-3)
 
 def basic_block(X, filters, first_layer_flag):
 
