@@ -11,42 +11,42 @@ import gc
 
 def ArtificialData(data, size):
 
-  """Creates artificial data for debug purposes
+	"""Creates artificial data for debug purposes
 
-    Args:
-        data (np.ndarray): Sample to copy the shape of original dataset
-        size (int): Sample size of artificial dataset
+	Args:
+		data (np.ndarray): Sample to copy the shape of original dataset
+		size (int): Sample size of artificial dataset
 
-    Returns:
-        d_x (np.ndarray): Artificial dataset
-        d_y (np.ndarray): Labels for the dataset (one-hot)
+	Returns:
+		d_x (np.ndarray): Artificial dataset
+		d_y (np.ndarray): Labels for the dataset (one-hot)
 
-  """
+	"""
 
-  d_x = np.zeros(([size] + list(data.shape[1:])), dtype = 'uint8')
-  d_y = np.zeros((size), dtype = 'uint8')
+	d_x = np.zeros(([size] + list(data.shape[1:])), dtype = 'uint8')
+	d_y = np.zeros((size), dtype = 'uint8')
 
-  num_classes = 4
-  stepsize = int(d_x.shape[0] / num_classes)
+	num_classes = 4
+	stepsize = int(d_x.shape[0] / num_classes)
 
-  for cl in range(num_classes):
-    mu = cl*2
-    sigma = 1
-    d_x[cl*stepsize:(cl+1)*stepsize,:,:,:] = np.random.normal(mu,sigma,[stepsize] + list(d_x.shape[1:]))
-    d_y[cl*stepsize:(cl+1)*stepsize] = np.tile(cl, stepsize)
+	for cl in range(num_classes):
+		mu = cl*2
+		sigma = 1
+		d_x[cl*stepsize:(cl+1)*stepsize,:,:,:] = np.random.normal(mu,sigma,[stepsize] + list(d_x.shape[1:]))
+		d_y[cl*stepsize:(cl+1)*stepsize] = np.tile(cl, stepsize)
 
-  randorder = np.arange(d_x.shape[0])
-  random.shuffle(randorder)
-  d_x = d_x[randorder]
-  d_y = d_y[randorder]
-  d_y = np.eye(num_classes)[d_y]
+	randorder = np.arange(d_x.shape[0])
+	random.shuffle(randorder)
+	d_x = d_x[randorder]
+	d_y = d_y[randorder]
+	d_y = np.eye(num_classes)[d_y]
 
-  return d_x, d_y
+	return d_x, d_y
  
  
 class garbage_cb(tf.keras.callbacks.Callback):
-  def on_epoch_end(self, epoch, logs = None):
-    gc.collect()
+	def on_epoch_end(self, epoch, logs = None):
+		gc.collect()
 
 
 def basic_block(X, f, strides, flag_first_entry):
