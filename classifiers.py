@@ -53,15 +53,15 @@ def basic_block(X, f, strides, flag_first_entry):
 
     """Basic 3x3 convolutional block with shortcut for ResNet18
 
-    Args: 
-			    X (tensor array): Input of the convolutional block
-          f (int): Size of filters used in both convolution
-          strides (tuple): Size of stride used in the first convolution of the block
-          flag_first_entry (bool): Indicates if it is the first block of first layer
+		Args: 
+			X (tensor array): Input of the convolutional block
+			f (int): Size of filters used in both convolution
+			strides (tuple): Size of stride used in the first convolution of the block
+			flag_first_entry (bool): Indicates if it is the first block of first layer
 
 		Returns:	
-			    X (tensor array): Output of the convolutional block
-    """
+			X (tensor array): Output of the convolutional block
+	"""
 
 
     X_shortcut = X
