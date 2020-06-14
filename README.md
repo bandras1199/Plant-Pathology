@@ -62,7 +62,8 @@ ResNet50 had so far the best results in a 4-by-4 cross validation split.
   - add randomized repetition and 10-by-10 CV for more accurate evaluation
   
   <strong> UPDATE v1.1: </strong> <br />
-  - prepare_img.CropAroundEllipse() function, which directly crop the image around the ellipse and resize to standard size, example of resulting image: <br />
+  - prepare_img.CropAroundEllipse() function, which directly crops the image around the ellipse and resize to standard size, example of resulting image: <br />
+  
   <img src="/demo/Train_0.jpg" alt="description" height="231" width="300" /> <br />
   this method significantly reduced the number of faulty images, although there are still a few remaining (prepare_data.remove_faulty())
   - resampled the smallest (multiple disease) class 2 times to balance skewed dataset and avoid using too much augmentation on multiple disease images
@@ -76,7 +77,6 @@ ResNet50 had so far the best results in a 4-by-4 cross validation split.
   - the ensemble training method significantly increased the accuracy on the weakest (multiple disease) class
   - the network is able to predict correctly most of the cases for all classes
   - manual error analysis is required to further investigate the false predictions (most probably the fine tuning of image processing method is required)
-  - apply histogram based features and spectral filtering
   - add randomized repetition
   
   
