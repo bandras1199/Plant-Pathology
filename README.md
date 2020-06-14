@@ -60,6 +60,19 @@ ResNet50 had so far the best results in a 4-by-4 cross validation split.
   - apply histogram based features and spectral filtering
   - select best model during training (not the last) - requires saving which takes extra time
   - add randomized repetition and 10-by-10 CV for more accurate evaluation
+  
+  <strong> UPDATE v1.1: </strong> <br />
+  - prepare_img.CropAroundEllipse() function, which directly crop the image around the ellipse and resize to standard size, example of resulting image: <br />
+  <img src="/demo/Train_0.jpg" alt="description" height="231" width="300" /> <br />
+  this method significantly reduced the number of faulty images, although there are still a few remaining (prepare_data.remove_faulty())
+  - resampled the smallest (multiple disease) class 2 times to balance skewed dataset and avoid using too much augmentation on multiple disease images
+  - added garbage collection and learning rate reduction to the training process
+  - the labels turned out to be very noisy, therefore I trained 4 independent models on 4 separate splits of the training dataset (bagging) and used the best 2 models (highest AUC) for prediction. I calculated the soft prediction of the testing set based on these 2 models, which finally gave 0.568 score on the kaggle submission. 
+  - The submission score itself is not informative therefore I calculated the CM over a separate testing set with labels: <br /> 
+  
+  
+  
+    
  
  <strong> References: </strong> 
  <br /> [1] Kaggle Plant Pathology Challange, https://www.kaggle.com/c/plant-pathology-2020-fgvc7
