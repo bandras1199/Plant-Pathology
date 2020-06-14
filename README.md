@@ -67,9 +67,17 @@ ResNet50 had so far the best results in a 4-by-4 cross validation split.
   this method significantly reduced the number of faulty images, although there are still a few remaining (prepare_data.remove_faulty())
   - resampled the smallest (multiple disease) class 2 times to balance skewed dataset and avoid using too much augmentation on multiple disease images
   - added garbage collection and learning rate reduction to the training process
-  - the labels turned out to be very noisy, therefore I trained 4 independent models on 4 separate splits of the training dataset (bagging) and used the best 2 models (highest AUC) for prediction. I calculated the soft prediction of the testing set based on these 2 models, which finally gave 0.568 score on the kaggle submission. 
+  - added contrast / brightness change to augmentation options
+  - the labels turned out to be very noisy, therefore I trained 4 independent models on 4 separate splits of the training dataset (ensemble bagging) and used the best 2 models (highest AUC) for prediction. I calculated the soft prediction of the testing set based on these 2 models, which finally gave 0.568 score on the kaggle submission. 
   - The submission score itself is not informative therefore I calculated the CM over a separate testing set with labels: <br /> 
-  
+    <img src="/demo/9ens.jpg" alt="description" height="231" width="300" /> <br />
+    
+    <strong> Conclusion, future plans v1.1: </strong> <br />
+  - the ensemble training method significantly increased the accuracy on the weakest (multiple disease) class
+  - the network is able to predict correctly most of the cases for all classes
+  - manual error analysis is required to further investigate the false predictions (most probably the fine tuning of image processing method is required)
+  - apply histogram based features and spectral filtering
+  - add randomized repetition
   
   
     
